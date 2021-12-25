@@ -2,18 +2,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.zzz.item</groupId>
-    <artifactId>app-common</artifactId>
-    <version>1.0.0</version>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.4.3</version>
-        <relativePath/>
+        <groupId>com.item.parent</groupId>
+        <artifactId>app-parent</artifactId>
+        <version>1.0.0</version>
     </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.item.common</groupId>
+    <artifactId>app-common</artifactId>
+    <version>1.0.0</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -21,21 +20,26 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <jdk.version>1.8</jdk.version>
-        <common.version>1.0.0</common.version>
-        <spring.cloud.dependencies.version>2020.0.1</spring.cloud.dependencies.version>
-        <maven.jar.plugin.version>3.2.0</maven.jar.plugin.version>
-        <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
-        <spring.cloud.config.server.version>3.0.2</spring.cloud.config.server.version>
-        <eureka.client.version>3.0.2</eureka.client.version>
-        <netflix.zuul.version>2.2.9.RELEASE</netflix.zuul.version>
-        <spring.cloud.config.version>3.0.1</spring.cloud.config.version>
     </properties>
 
     <dependencies>
+        <!-- eureka客户端依赖-->
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.20</version>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <version>${eureka.client.version}</version>
+        </dependency>
+
+        <!-- spring cloud config客户端依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+            <version>${spring.cloud.config.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
         </dependency>
 
         <dependency>
@@ -52,7 +56,7 @@
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
-            <version>2.6</version>
+            <version>${commons.lang.version}</version>
         </dependency>
 
         <dependency>
@@ -81,25 +85,11 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.everit.json</groupId>
-            <artifactId>org.everit.json.schema</artifactId>
-            <version>1.4.0</version>
-        </dependency>
     </dependencies>
 
     <dependencyManagement>

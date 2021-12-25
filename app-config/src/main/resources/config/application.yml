@@ -1,0 +1,24 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: config-center
+  profiles:
+    active: native
+  cloud:
+    config:
+      enabled: true
+      discovery:
+        service-id: config-center
+      server:
+        native:
+          search-locations: /home/config-center/config
+
+eureka:
+  client:
+    enabled: true
+    service-url:
+      defaultZone: http://192.168.92.128:9000/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
