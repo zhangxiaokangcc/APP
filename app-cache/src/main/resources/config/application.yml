@@ -1,18 +1,21 @@
 server:
-  port: 8000
+  port: 8002
+
 spring:
   application:
-    name: config-center
+    name: app-cache
   profiles:
-    active: native
+    active: dev
   cloud:
     config:
       enabled: true
+      profile: dev
+      name: ${spring.application.name}-${spring.profiles.active}
       discovery:
         service-id: config-center
-      server:
-        native:
-          search-locations: /home/config-center/config
+
+  config:
+    import: optional:configserver:http://CONFIG-SERVER
 
 eureka:
   client:
@@ -22,3 +25,4 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${server.port}
+

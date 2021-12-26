@@ -1,4 +1,4 @@
-package com.item.common.common.io;
+package com.item.common.common;
 
 /**
  * 功能描述:

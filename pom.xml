@@ -7,6 +7,9 @@
     <groupId>com.item.parent</groupId>
     <artifactId>app-parent</artifactId>
     <version>1.0.0</version>
+    <modules>
+        <module>app-cache</module>
+    </modules>
     <packaging>pom</packaging>
 
     <parent>
