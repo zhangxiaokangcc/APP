@@ -1,5 +1,6 @@
 package com.item.gateway;
 
+import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.ArrayUtils;
 import org.springframework.boot.Banner;
@@ -17,6 +18,7 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 @Slf4j
 @EnableZuulProxy
+@EnableApolloConfig
 @EnableDiscoveryClient
 @SpringBootApplication
 public class GatewayApplication {

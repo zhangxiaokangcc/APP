@@ -25,6 +25,13 @@
             <version>${spring.cloud.config.server.version}</version>
         </dependency>
 
+        <!-- 服务注册到eureka的依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <version>${eureka.client.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>

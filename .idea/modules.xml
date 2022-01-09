@@ -7,7 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/app-common/app-common.iml" filepath="$PROJECT_DIR$/app-common/app-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/app-config/app-config.iml" filepath="$PROJECT_DIR$/app-config/app-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/app-eureka/app-eureka.iml" filepath="$PROJECT_DIR$/app-eureka/app-eureka.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gateway/app-gateway.iml" filepath="$PROJECT_DIR$/gateway/app-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-gateway/app-gateway.iml" filepath="$PROJECT_DIR$/app-gateway/app-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/app-isp/app-isp.iml" filepath="$PROJECT_DIR$/app-isp/app-isp.iml" />
     </modules>
   </component>

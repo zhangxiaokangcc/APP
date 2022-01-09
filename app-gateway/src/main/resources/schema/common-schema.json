@@ -1,3 +1,41 @@
 {
-  "$schema": ""
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "AppLogin",
+  "description": "用户登录",
+  "type": "object",
+  "properties": {
+    "commandId": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 64
+    },
+    "channel": {
+        "type": "string",
+        "enum": ["app","web","h5"]
+    },
+    "timestamp": {
+        "type": "string",
+        "minLength": 10,
+        "maxLength": 16
+    },
+    "biz_content": {
+        "$ref": "#/definitions/biz_content"
+    }
+  },
+  "required": ["commandId", "timestamp","channel","biz_content"],
+  "additionalProperties": false,
+  "definitions": {
+    "biz_content": {
+      "type": "object",
+      "properties": {
+          "phoneNumber": {
+              "type": "string",
+              "minLength": 6,
+              "maxLength": 11
+          }
+      },
+      "required": ["phoneNumber"],
+      "additionalProperties": false
+    }
+  }
 }
