@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: gateway
+    name: app-gateway
   profiles:
     active: dev
   cloud:
@@ -31,4 +31,3 @@ zuul:
     user-basic:
       service-id: user-basic
       path: /user-basic/**
-

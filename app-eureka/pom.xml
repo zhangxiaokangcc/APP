@@ -46,6 +46,7 @@
                 <configuration>
                     <excludes>
                         <exclude>**/resource/config/application.yml</exclude>
+                        <exclude>**/resource/local/logback.xml</exclude>
                     </excludes>
                 </configuration>
             </plugin>

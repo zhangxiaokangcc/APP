@@ -2,8 +2,8 @@
 <configuration>
 
     <!-- 定义日志文件的存储地址 -->
-    <property name="LOG_APP_NAME" value="app-config"/>
-    <property name="LOG_DIR" value="/home/app-config/logs"/>
+    <property name="LOG_APP_NAME" value="app-gateway"/>
+    <property name="LOG_DIR" value="/home/app-gateway/logs"/>
 
     <!--
         %p:输出优先级，即DEBUG,INFO,WARN,ERROR,FATAL

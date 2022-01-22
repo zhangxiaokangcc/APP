@@ -30,7 +30,7 @@
         <eureka.server.version>1.4.7.RELEASE</eureka.server.version>
         <spring.cloud.config.version>3.1.0</spring.cloud.config.version>
         <eureka.client.version>3.1.0</eureka.client.version>
-        <netflix.zuul.version>2.2.9.RELEASE</netflix.zuul.version>
+        <netflix.zuul.version>2.2.10.RELEASE</netflix.zuul.version>
         <lombok.version>1.18.22</lombok.version>
         <commons.lang.version>2.6</commons.lang.version>
     </properties>

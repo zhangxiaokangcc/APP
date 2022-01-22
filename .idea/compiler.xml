@@ -7,15 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="app-common" />
         <module name="app-cache" />
         <module name="app-gateway" />
+        <module name="app-common" />
         <module name="app-config" />
         <module name="app-eureka" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="app-cache" target="8" />
+      <module name="app-cache" target="1.8" />
       <module name="app-common" target="1.8" />
       <module name="app-config" target="1.8" />
       <module name="app-eureka" target="1.8" />

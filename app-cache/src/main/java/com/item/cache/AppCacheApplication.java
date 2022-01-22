@@ -1,5 +1,6 @@
 package com.item.cache;
 
+import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.ArrayUtils;
 import org.springframework.boot.Banner;
@@ -15,6 +16,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 
 @Slf4j
+@EnableApolloConfig
 @EnableDiscoveryClient
 @SpringBootApplication
 public class AppCacheApplication {
